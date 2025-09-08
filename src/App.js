@@ -11,7 +11,7 @@ function App() {
   const [raffleInfo, setRaffleInfo] = useState(null);
   const [activeTab, setActiveTab] = useState('sold');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser] = useState(null);
+  //const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function App() {
       
       if (data.success) {
         setIsAuthenticated(true);
-        setUser(userData);
+        //setUser(userData);
       } else {
         // Token inválido, limpiar almacenamiento
         localStorage.removeItem('authToken');
@@ -78,14 +78,14 @@ function App() {
 
   const handleLogin = (userData, token) => {
     setIsAuthenticated(true);
-    setUser(userData);
+    //setUser(userData);
     localStorage.setItem('authToken', token);
     localStorage.setItem('user', JSON.stringify(userData));
   };
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    setUser(null);
+    //setUser(null);
     localStorage.removeItem('authToken');
     localStorage.removeItem('user');
   };
