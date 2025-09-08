@@ -575,7 +575,7 @@ Si tienes dudas o necesitas ayuda, estamos para ti.`;
   //   );
   // };
   const getStatusBadge = (confirmed, bank) => {
-    return bank!="rechazada" ? (
+    return bank!=="rechazada" ? (
 		confirmed ? (
 		  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-lg font-medium bg-green-100 text-green-800 border-2 border-green-700">
 			Confirmado
