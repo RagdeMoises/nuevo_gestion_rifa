@@ -56,7 +56,7 @@ const SaleCard = ({
 }) => {
   const isBolivares = sale.tipo_venta === 'bolivares';
   const isZelle = sale.tipo_venta === 'zelle';
-  const isDivisas = sale.tipo_venta === 'divisas';
+  //const isDivisas = sale.tipo_venta === 'divisas';
   
   // Determinar el texto y estilo según el tipo de venta
   let paymentTypeText = '';
