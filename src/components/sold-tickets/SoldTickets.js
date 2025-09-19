@@ -72,7 +72,8 @@ const SoldTickets = ( {onLogout}) => {
     pendingTickets: 0,
     totalAmountBs: 0,
     totalAmountDolares: 0,
-    totalRechazadas: 0
+    totalRechazadas: 0,
+    totalAmountZelle:0
   });
   const [isRejectModalOpen, setIsRejectModalOpen] = useState(false);
   const [saleToReject, setSaleToReject] = useState(null);
@@ -210,6 +211,7 @@ const SoldTickets = ( {onLogout}) => {
           pendingTickets: data.data.rows[1].pendientes,
           totalAmountBs: data.data.rows[0].ingresos,
           totalAmountDolares: data.data.rows[1].ingresos,
+          totalAmountZelle: data.data.rows[0].zelle,
           totalRechazadas: data.data.rows[0].rechazadas
         });
       } else {

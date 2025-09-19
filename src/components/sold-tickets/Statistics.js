@@ -38,7 +38,9 @@ const Statistics = ({ salesStats, onShowRejected, onFilterByStatus, activeStatus
         value={
           <>
             {salesStats.totalAmountDolares.toLocaleString()}<br />
-            {salesStats.totalAmountBs.toLocaleString()}
+            {salesStats.totalAmountBs.toLocaleString()}<br />
+            {salesStats.totalAmountZelle.toLocaleString()}
+            
           </>
         }
         subtitle="Confirmadas"
